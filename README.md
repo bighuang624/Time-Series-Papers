@@ -33,11 +33,11 @@ Time series forecasting is the task of predicting future values of a time series
 
 - **Modeling Long- and Short-Term Temporal Patterns with Deep Neural Network** (**SIGIR18**) [[paper](https://arxiv.org/pdf/1703.07015v3.pdf)] [[code](https://paperswithcode.com/paper/modeling-long-and-short-term-temporal)] *
     - Propose LSTNet, which contains a recurrent-skip layer or a temporal attention layer to capture a mixture of short-term and long-term repeating patterns
-    - 提出 LSTNet，其使用 recurrent-skip layer 或 temporal attention layer 来建模短期和长期重复模式的混合
+    - 提出 LSTNet，使用 recurrent-skip layer 或 temporal attention layer 来建模短期和长期重复模式的混合
 
 - **A Memory-Network Based Solution for Multivariate Time-Series Forecasting** [[paper](https://arxiv.org/pdf/1809.02105v1.pdf)] [[code](https://github.com/Maple728/MTNet)] *
     - Propose MTNet, which uses a memory component and attention mechanism to store the long-term historical data and deal with a period of time rather than a single time step
-    - 提出 MTNet，其使用一个记忆模块和注意力机制来存储长期的历史数据，并且可以同时处理一段序列而非单独的时间步
+    - 提出 MTNet，使用一个记忆模块和注意力机制来存储长期的历史数据，并且可以同时处理一段序列而非单独的时间步
 
 - **Temporal Pattern Attention for Multivariate Time Series Forecasting** [[paper](https://arxiv.org/pdf/1809.04206v2.pdf)] [[code](https://github.com/gantheory/TPA-LSTM)] *
     - Propose Temporal Pattern Attention, which learns to select not only time steps but also series relevant to the prediction
@@ -47,7 +47,7 @@ Time series forecasting is the task of predicting future values of a time series
 
 - **A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction** (**IJCAI17**) [[paper](https://arxiv.org/pdf/1704.02971v4.pdf)] [[code](https://paperswithcode.com/paper/a-dual-stage-attention-based-recurrent-neural)] *
     - Propose DA-RNN, which consists of an encoder with an input attention mechanism to select relevant driving series, and a decoder with a temporal attention mechanism to capture long-range temporal information of the encoded inputs
-    - 提出 DA-RNN，包含一个带有 input attention 机制的编码器来选择相关外部序列，和一个带有 temporal attention 机制的解码器来捕获已编码输入中的长期时间信息
+    - 提出 DA-RNN，其包含一个带有 input attention 机制的编码器来选择相关外部序列，和一个带有 temporal attention 机制的解码器来捕获已编码输入中的长期时间信息
 
 - - -
 
@@ -78,6 +78,12 @@ Time series clustering is the task of forming clusters given a set of unlabeled 
 ## Anomaly Detection (异常检测)
 
 Anomaly detection is the task of identifying rare items, events or observations which raise suspicions by differing significantly from the majority of the data.
+
+#### 2019
+
+- **A Deep Neural Network for Unsupervised Anomaly Detection and Diagnosis in Multivariate Time Series Data** (**AAAI19**) [[paper](https://arxiv.org/pdf/1811.08055.pdf)]
+    - Propose a Multi-Scale Convolutional Recurrent Encoder-Decoder (MSCRED), to perform anomaly detection and diagnosis in multivariate time series data
+    - 提出了一种多尺度卷积循环编码器-解码器（MSCRED），对多变量时间序列数据进行异常检测和诊断
 
 - - -
 
