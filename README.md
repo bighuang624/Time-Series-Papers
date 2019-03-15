@@ -12,11 +12,14 @@
 
 - - -
 
+## Catelog (目录)
+
 - [Awesome Time Series Papers](#awesome-time-series-papers)
-    - [Time Series Forecasting (时间序列预测)](#)
-    - [Time Series Classification (时间序列分类)](#) 
-    - [Time Series Clustering (时间序列聚类)](#)
-    - [Anomaly Detection (异常检测)](#) 
+    - [Time Series Forecasting (时间序列预测)](#time-series-forecasting-时间序列预测)
+    - [Time Series Classification (时间序列分类)](#time-series-classification-时间序列分类) 
+    - [Time Series Clustering (时间序列聚类)](#time-series-clustering-时间序列聚类)
+    - [Anomaly Detection (异常检测)](#anomaly-detection-异常检测) 
+    - [Sequence Modeling (序列建模)](#sequence-modeling-序列建模)
 
 - - -
 
@@ -67,9 +70,8 @@ Time series clustering is the task of forming clusters given a set of unlabeled 
 #### 2016
 
 - **Unsupervised Feature Learning from Time Series** (**IJCAI16**) [[paper](https://pdfs.semanticscholar.org/b4f5/8e005541c54b146e67b09094f09ba3297906.pdf)]
-    - Present a new Unsupervised Shapelet Learning Model (USLM) to learn shapelets, which combines pseudo-class label, spectral analysis, shapelets regularization and regularized least-squares for learning
-    - 给出一个结合了伪类标签、谱分析、shapelets 正则化和正则化最小二乘法的无监督 Shapelet 学习模型
-    - Shapelets are time series short segments that can best predict class labels
+    - Present a new Unsupervised Shapelet Learning Model (USLM) to learn shapelets, which combines pseudo-class label, spectral analysis, shapelets regularization and regularized least-squares for learning (shapelets are time series short segments that can best predict class labels)
+    - 给出一个结合了伪类标签、谱分析、shapelets 正则化和正则化最小二乘法的无监督 Shapelet 学习模型（shapelets 是时间序列的短片段，能够最好地预测类标签）
 
 - - -
 
@@ -79,11 +81,19 @@ Anomaly detection is the task of identifying rare items, events or observations 
 
 - - -
 
-<!--## Sequence Modeling (序列建模)
+## Sequence Modeling (序列建模)
+
+Specially designed sequence modeling methods can be applied to time series data and solve many problems, e.g. forecasting and classification.
+
+#### 2018
+
+- **An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling** [[paper](https://arxiv.org/pdf/1803.01271v2.pdf)] [[code](https://paperswithcode.com/paper/an-empirical-evaluation-of-generic)]
+    - Describe a temporal convolutional network (TCN), which contains causal convolutions, dilated convolutions and residual connections
+    - 描述了时间卷积网络，其包含有因果卷积、扩张卷积和残差连接
 
 - - -
 
-## Spatial-Temporal Forecasting (时空预测)
+<!-- ## Spatial-Temporal Forecasting (时空预测)
 
 - - -
 
