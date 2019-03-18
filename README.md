@@ -1,14 +1,16 @@
 # Awesome Time Series Papers
 
-- List of awesome papers from various research fields in time series analysis, mainly including algorithms based on machine learning. 
-- `*` after the title of the paper indicates that the full paper has been carefully read by [me](https://github.com/bighuang624).
-- A link of open source code is given if avaliable on [Papers With Code](https://paperswithcode.com/) or [Github](https://github.com/).
-- Any contributions including PR are welcomed.
+- Introduction:
+    - List of awesome papers from various research fields in time series analysis, mainly including algorithms based on machine learning. 
+    - `*` after the title of the paper indicates that the full paper has been carefully read by [me](https://github.com/bighuang624).
+    - A link of open source code is given if avaliable on [Papers With Code](https://paperswithcode.com/) or [Github](https://github.com/).
+    - Any [contributions](https://github.com/bighuang624/Time-Series-Papers/blob/master/.github/contribution_template.md) including PR are welcomed.
 
-- 收录时间序列分析中各个研究领域的高水平文章，主要包含基于机器学习的算法。
-- 论文标题后的`*`号表示[我](https://github.com/bighuang624)仔细地读过全文。
-- 如果 [Papers With Code](https://paperswithcode.com/) 或 [Github](https://github.com/) 上存在该论文的开源代码，则给出其链接。
-- 欢迎包括 PR 在内的一切贡献。
+- 介绍：
+    - 收录时间序列分析中各个研究领域的高水平文章，主要包含基于机器学习的算法。
+    - 论文标题后的`*`号表示[我](https://github.com/bighuang624)仔细地读过全文。
+    - 如果 [Papers With Code](https://paperswithcode.com/) 或 [Github](https://github.com/) 上存在该论文的开源代码，则给出其链接。
+    - 欢迎包括 PR 在内的一切[贡献](https://github.com/bighuang624/Time-Series-Papers/blob/master/.github/contribution_template.md)。
 
 - - -
 
@@ -55,6 +57,16 @@ Time series forecasting is the task of predicting future values of a time series
 
 Time series forecasting is the task of assigning time series pattern to a specific category.
 
+#### 2018
+
+- **Towards a Universal Neural Network Encoder for Time Series** [[paper](https://arxiv.org/pdf/1805.03908.pdf)] *
+    - Study the use of a time series encoder to learn representations that are useful on data set types with which it has not been trained on
+    - 研究时序编码器的使用，来学习对其未接触过的数据集类型有用的表示
+
+- **Transfer learning for time series classification** (**IEEE Big Data 2018**) [[paper](https://arxiv.org/pdf/1811.01533.pdf)] [[code](https://github.com/hfawaz/bigdata18)] *
+    - Extensive experiments show that transferring the network's weights works on time series classification task, and the choice of the source dataset impacts significantly on the model's generalization capabilities
+    - 使用大量实验表明，模型权值的迁移促进其在目标数据集上分类任务的表现，且源数据集的选择对模型的泛化能力有显著影响
+
 - - -
 
 ## Time Series Clustering (时间序列聚类)
@@ -95,11 +107,11 @@ Specially designed sequence modeling methods can be applied to time series data 
 
 - **An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling** [[paper](https://arxiv.org/pdf/1803.01271v2.pdf)] [[code](https://paperswithcode.com/paper/an-empirical-evaluation-of-generic)]
     - Describe a temporal convolutional network (TCN), which contains causal convolutions, dilated convolutions and residual connections
-    - 描述了时间卷积网络，其包含有因果卷积、扩张卷积和残差连接
+    - 描述了时间卷积网络（TCN），其包含有因果卷积、扩张卷积和残差连接
 
 - - -
 
-<!-- ## Spatial-Temporal Forecasting (时空预测)
+<!-- ## Spatio-temporal Forecasting (时空预测)
 
 - - -
 
