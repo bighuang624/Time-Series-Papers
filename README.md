@@ -15,13 +15,26 @@
 - - -
 
 ## Catelog (目录)
-
 - [Awesome Time Series Papers](#awesome-time-series-papers)
-    - [Time Series Forecasting (时间序列预测)](#time-series-forecasting-时间序列预测)
-    - [Time Series Classification (时间序列分类)](#time-series-classification-时间序列分类) 
-    - [Time Series Clustering (时间序列聚类)](#time-series-clustering-时间序列聚类)
-    - [Anomaly Detection (异常检测)](#anomaly-detection-异常检测) 
-    - [Sequence Modeling (序列建模)](#sequence-modeling-序列建模)
+  - [Catelog (目录)](#catelog-%E7%9B%AE%E5%BD%95)
+  - [Time Series Forecasting (时间序列预测)](#time-series-forecasting-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E9%A2%84%E6%B5%8B)
+    - [Univariate (单变量)](#univariate-%E5%8D%95%E5%8F%98%E9%87%8F)
+    - [Multivariate with influential factors](#multivariate-with-influential-factors)
+      - [2017](#2017)
+    - [Multivariate with only historical series](#multivariate-with-only-historical-series)
+      - [2018](#2018)
+  - [Time Series Classification (时间序列分类)](#time-series-classification-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E7%B1%BB)
+      - [2018](#2018-1)
+  - [Time Series Clustering (时间序列聚类)](#time-series-clustering-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E8%81%9A%E7%B1%BB)
+      - [2019](#2019)
+      - [2018](#2018-2)
+      - [2016](#2016)
+  - [Anomaly Detection (异常检测)](#anomaly-detection-%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B)
+      - [2019](#2019-1)
+  - [Sequence Modeling (序列建模)](#sequence-modeling-%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1)
+      - [2018](#2018-3)
+  - [Others (其他)](#others-%E5%85%B6%E4%BB%96)
+      - [2018](#2018-4)
 
 - - -
 
@@ -29,7 +42,21 @@
 
 Time series forecasting is the task of predicting future values of a time series (as well as uncertainty bounds).
 
-<!--### Multivariate-->
+### Univariate (单变量)
+
+### Multivariate with influential factors
+
+The model predicts the current value of **a time series** based upon its previous values as well as the current and past values of multiple driving (exogenous) series.
+
+#### 2017
+
+- **A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction** (**IJCAI17**) [[paper](https://arxiv.org/pdf/1704.02971v4.pdf)] [[code](https://paperswithcode.com/paper/a-dual-stage-attention-based-recurrent-neural)] *
+    - Propose DA-RNN, which consists of an encoder with an input attention mechanism to select relevant driving series, and a decoder with a temporal attention mechanism to capture long-range temporal information of the encoded inputs
+    - 提出 DA-RNN，其包含一个带有 input attention 机制的编码器来选择相关外部序列，和一个带有 temporal attention 机制的解码器来捕获已编码输入中的长期时间信息
+
+### Multivariate with only historical series
+
+The models predicts the future values of **multivariate time series** only based upon their previous values.
 
 #### 2018
 
@@ -45,12 +72,6 @@ Time series forecasting is the task of predicting future values of a time series
     - Propose Temporal Pattern Attention, which learns to select not only time steps but also series relevant to the prediction
     - 提出 Temporal Pattern Attention，不仅能够选择与预测相关的时间步，还能够考虑到不同变量的影响
 
-#### 2017
-
-- **A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction** (**IJCAI17**) [[paper](https://arxiv.org/pdf/1704.02971v4.pdf)] [[code](https://paperswithcode.com/paper/a-dual-stage-attention-based-recurrent-neural)] *
-    - Propose DA-RNN, which consists of an encoder with an input attention mechanism to select relevant driving series, and a decoder with a temporal attention mechanism to capture long-range temporal information of the encoded inputs
-    - 提出 DA-RNN，其包含一个带有 input attention 机制的编码器来选择相关外部序列，和一个带有 temporal attention 机制的解码器来捕获已编码输入中的长期时间信息
-
 - - -
 
 ## Time Series Classification (时间序列分类)
@@ -60,8 +81,8 @@ Time series forecasting is the task of assigning time series pattern to a specif
 #### 2018
 
 - **Towards a Universal Neural Network Encoder for Time Series** [[paper](https://arxiv.org/pdf/1805.03908.pdf)] *
-    - Study the use of a time series encoder to learn representations that are useful on data set types with which it has not been trained on
-    - 研究时序编码器的使用，来学习对其未接触过的数据集类型有用的表示
+    - Use multi-task learning to enable a time series encoder to learn representations that are useful on data set types with which it has not been trained on. The encoder is formed of a convolutional neural network whose temporal output is summarized by a convolutional attention mechanism
+    - 使用多任务学习的方式让时序编码器学习对未接触过的数据集类型有用的表示。本文使用的编码器由卷积神经网络构成，其时间输出由卷积注意机制汇总而成
 
 - **Transfer learning for time series classification** (**IEEE Big Data 2018**) [[paper](https://arxiv.org/pdf/1811.01533.pdf)] [[code](https://github.com/hfawaz/bigdata18)] *
     - Extensive experiments show that transferring the network's weights works on time series classification task, and the choice of the source dataset impacts significantly on the model's generalization capabilities
@@ -72,6 +93,12 @@ Time series forecasting is the task of assigning time series pattern to a specif
 ## Time Series Clustering (时间序列聚类)
 
 Time series clustering is the task of forming clusters given a set of unlabeled time series data.
+
+#### 2019
+
+- **SOM-VAE: Interpretable Discrete Representation Learning on Time Series** (**ICLR19**) [[paper](https://arxiv.org/pdf/1806.02199.pdf)] [[code](https://paperswithcode.com/paper/som-vae-interpretable-discrete-representation)] [[SOM-YouTube](https://www.youtube.com/watch?v=3osKNPyAxPM)]
+    - Design SOM-VAE for interpretable discrete representation learning on time series, and show that the latent probabilistic model in the representation learning architecture improves clustering and interpretability of the representations on time series
+    - 针对时间序列上的可解释离散表示学习设计了 SOM-VAE，并表明在表示学习体系结构中的潜在概率模型提高了时间序列表示的聚类效果和可解释性
 
 #### 2018
 
@@ -95,13 +122,13 @@ Anomaly detection is the task of identifying rare items, events or observations 
 
 - **A Deep Neural Network for Unsupervised Anomaly Detection and Diagnosis in Multivariate Time Series Data** (**AAAI19**) [[paper](https://arxiv.org/pdf/1811.08055.pdf)]
     - Propose a Multi-Scale Convolutional Recurrent Encoder-Decoder (MSCRED), to perform anomaly detection and diagnosis in multivariate time series data
-    - 提出了一种多尺度卷积循环编码器-解码器（MSCRED），对多变量时间序列数据进行异常检测和诊断
+    - 提出一种多尺度卷积循环编码器-解码器（MSCRED），对多变量时间序列数据进行异常检测和诊断
 
 - - -
 
 ## Sequence Modeling (序列建模)
 
-Specially designed sequence modeling methods can be applied to time series data and solve many problems, e.g. forecasting and classification.
+Specially designed sequence modeling methods can be applied to time series data and solve many tasks, e.g. forecasting and classification.
 
 #### 2018
 
@@ -111,15 +138,10 @@ Specially designed sequence modeling methods can be applied to time series data 
 
 - - -
 
-<!-- ## Spatio-temporal Forecasting (时空预测)
+## Others (其他)
 
-- - -
+#### 2018
 
-## Stock Market Prediction (股票市场预测)
-
-- - -
-
-## Traffic Prediction (交通预测)
-
-- - --->
-
+- **Recurrent Neural Networks for Multivariate Time Series with Missing Values** (**Scientific Reports 2018**) [[paper](https://www.nature.com/articles/s41598-018-24271-9.pdf)]
+    - Propose GRU-D, which utilizes the missing patterns to achieve better prediction results by incorporating two representations of missing patterns, i.e., masking and time interval
+    - 提出 GRU-D，其通过结合缺失的 patterns 的两种表示，即掩蔽（masking）和时间间隔（time interval），来获得更好的预测结果
