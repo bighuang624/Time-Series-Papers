@@ -19,12 +19,13 @@
   - [Catelog (目录)](#catelog-%E7%9B%AE%E5%BD%95)
   - [Time Series Forecasting (时间序列预测)](#time-series-forecasting-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E9%A2%84%E6%B5%8B)
     - [Univariate (单变量)](#univariate-%E5%8D%95%E5%8F%98%E9%87%8F)
-    - [Multivariate with influential factors](#multivariate-with-influential-factors)
+    - [Multivariate to Univariate (多变量预测单变量)](#multivariate-to-univariate-%E5%A4%9A%E5%8F%98%E9%87%8F%E9%A2%84%E6%B5%8B%E5%8D%95%E5%8F%98%E9%87%8F)
       - [2017](#2017)
-    - [Multivariate with only historical series](#multivariate-with-only-historical-series)
+    - [Multivariate to Multivariate (多变量预测多变量)](#multivariate-to-multivariate-%E5%A4%9A%E5%8F%98%E9%87%8F%E9%A2%84%E6%B5%8B%E5%A4%9A%E5%8F%98%E9%87%8F)
       - [2018](#2018)
   - [Time Series Classification (时间序列分类)](#time-series-classification-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E7%B1%BB)
       - [2018](#2018-1)
+      - [2017](#2017-1)
   - [Time Series Clustering (时间序列聚类)](#time-series-clustering-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E8%81%9A%E7%B1%BB)
       - [2019](#2019)
       - [2018](#2018-2)
@@ -33,7 +34,11 @@
       - [2019](#2019-1)
   - [Sequence Modeling (序列建模)](#sequence-modeling-%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1)
       - [2018](#2018-3)
+  - [Time Series Segmentation (时间序列分割)](#time-series-segmentation-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E5%89%B2)
+  - [Study of Stock Market (股票市场研究)](#study-of-stock-market-%E8%82%A1%E7%A5%A8%E5%B8%82%E5%9C%BA%E7%A0%94%E7%A9%B6)
+      - [2017](#2017-2)
   - [Others (其他)](#others-%E5%85%B6%E4%BB%96)
+      - [2019](#2019-2)
       - [2018](#2018-4)
 
 - - -
@@ -44,7 +49,7 @@ Time series forecasting is the task of predicting future values of a time series
 
 ### Univariate (单变量)
 
-### Multivariate with influential factors
+### Multivariate to Univariate (多变量预测单变量)
 
 The model predicts the current value of **a time series** based upon its previous values as well as the current and past values of multiple driving (exogenous) series.
 
@@ -54,7 +59,8 @@ The model predicts the current value of **a time series** based upon its previou
     - Propose DA-RNN, which consists of an encoder with an input attention mechanism to select relevant driving series, and a decoder with a temporal attention mechanism to capture long-range temporal information of the encoded inputs
     - 提出 DA-RNN，其包含一个带有 input attention 机制的编码器来选择相关外部序列，和一个带有 temporal attention 机制的解码器来捕获已编码输入中的长期时间信息
 
-### Multivariate with only historical series
+
+### Multivariate to Multivariate (多变量预测多变量)
 
 The models predicts the future values of **multivariate time series** only based upon their previous values.
 
@@ -87,6 +93,12 @@ Time series forecasting is the task of assigning time series pattern to a specif
 - **Transfer learning for time series classification** (**IEEE Big Data 2018**) [[paper](https://arxiv.org/pdf/1811.01533.pdf)] [[code](https://github.com/hfawaz/bigdata18)] *
     - Extensive experiments show that transferring the network's weights works on time series classification task, and the choice of the source dataset impacts significantly on the model's generalization capabilities
     - 使用大量实验表明，模型权值的迁移促进其在目标数据集上分类任务的表现，且源数据集的选择对模型的泛化能力有显著影响
+
+#### 2017
+
+- **Time series classification from scratch with deep neural networks: A strong baseline** (**IJCNN17**) [[paper](https://arxiv.org/pdf/1611.06455.pdf)] [[code](https://paperswithcode.com/paper/time-series-classification-from-scratch-with#code)]
+    - Propose Fully Convolutional Network (FCN), which can be a strong baseline for similar tasks as one of the earliest deep learning time series classifiers
+    - 提出了完全卷积网络（FCN），作为最早的深度学习时间序列分类器之一，它可以作为类似任务的强基准模型
 
 - - -
 
@@ -138,7 +150,35 @@ Specially designed sequence modeling methods can be applied to time series data 
 
 - - -
 
+## Time Series Segmentation (时间序列分割)
+
+Time series segmentation is a method of time-series analysis in which an input time-series is divided into a sequence of discrete segments in order to reveal the underlying properties of its source.
+
+- - -
+
+## Study of Stock Market (股票市场研究)
+
+#### 2017
+
+- **Deep Neural-Network Based Stock Trading System Based on Evolutionary Optimized Technical Analysis Parameters** [[paper](https://www.sciencedirect.com/science/article/pii/S1877050917318252)] [[code](https://github.com/omerbsezer/SparkDeepMlpGADow30)]
+    - Propose a stock trading system based on technical analysis parameters optimized by genetic algorithms, and the optimized parameters are then passed to a deep MLP neural network as features for buy-sell-hold predictions
+    - 提出一种基于遗传算法优化的技术分析指标的股票交易系统，优化后的技术分析指标作为特征被传入深度 MLP 神经网络进行买入-卖出-持有预测
+
+- - -
+
 ## Others (其他)
+
+This section contains papers dealing with time series data or applying them to time series tasks, but not appropriate for previous sections.
+
+#### 2019
+
+- **Adversarial Attacks on Time Series** [[paper](https://arxiv.org/pdf/1902.10755v2.pdf)] [[code](https://github.com/houshd/TS_Adv)]
+    - Propose a model distillation technique to mimic the behavior of the various classical time series classification models and an adversarial transformation network (ATN) to attack various time series datasets
+    - 提出一种模拟各种经典时间序列分类模型行为的模型蒸馏技术，以及一种在各种时间序列数据集上产生攻击的对抗变换网络（ATN）
+
+- **Data-driven Neural Architecture Learning For Financial Time-series Forecasting** [[paper](http://arxiv.org/abs/1903.06751)]
+    - Adapt Heterogeneous Multilayer [Generalized Operational Perceptron](https://www.researchgate.net/profile/Serkan_Kiranyaz/publication/318327067_Generalized_model_of_biological_neural_networks_Progressive_operational_perceptrons/links/59de8a27a6fdcca0d3204d24/Generalized-model-of-biological-neural-networks-Progressive-operational-perceptrons.pdf) (HeMLGOP) algorithm to progressively learn a heterogeneous neural architecture for the given financial time series forecasting problem with imbalanced data distribution problem
+    - 采用异构多层[广义操作感知器](https://www.researchgate.net/profile/Serkan_Kiranyaz/publication/318327067_Generalized_model_of_biological_neural_networks_Progressive_operational_perceptrons/links/59de8a27a6fdcca0d3204d24/Generalized-model-of-biological-neural-networks-Progressive-operational-perceptrons.pdf)（HeMLGOP）算法，来逐步学习得到异构神经网络，以解决具有不平衡数据分布的给定财经时序预测问题
 
 #### 2018
 
