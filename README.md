@@ -33,12 +33,15 @@
   - [Anomaly Detection (异常检测)](#anomaly-detection-%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B)
       - [2019](#2019-1)
   - [Sequence Modeling (序列建模)](#sequence-modeling-%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1)
+    - [Supervised Sequence Modeling (监督序列建模)](#supervised-sequence-modeling-%E7%9B%91%E7%9D%A3%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1)
       - [2018](#2018-3)
+    - [Unsupervised Representation Learning (无监督表示学习)](#unsupervised-representation-learning-%E6%97%A0%E7%9B%91%E7%9D%A3%E8%A1%A8%E7%A4%BA%E5%AD%A6%E4%B9%A0)
+      - [2019](#2019-2)
   - [Time Series Segmentation (时间序列分割)](#time-series-segmentation-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E5%89%B2)
   - [Study of Stock Market (股票市场研究)](#study-of-stock-market-%E8%82%A1%E7%A5%A8%E5%B8%82%E5%9C%BA%E7%A0%94%E7%A9%B6)
       - [2017](#2017-2)
   - [Others (其他)](#others-%E5%85%B6%E4%BB%96)
-      - [2019](#2019-2)
+      - [2019](#2019-3)
       - [2018](#2018-4)
 
 - - -
@@ -140,13 +143,27 @@ Anomaly detection is the task of identifying rare items, events or observations 
 
 ## Sequence Modeling (序列建模)
 
-Specially designed sequence modeling methods can be applied to time series data and solve many tasks, e.g. forecasting and classification.
+Specially designed sequence modeling methods can learn the representation of the input time series data, which will be helpful to solve many tasks, e.g. forecasting and classification.
+
+### Supervised Sequence Modeling (监督序列建模)
 
 #### 2018
 
 - **An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling** [[paper](https://arxiv.org/pdf/1803.01271v2.pdf)] [[code](https://paperswithcode.com/paper/an-empirical-evaluation-of-generic)]
     - Describe a temporal convolutional network (TCN), which contains causal convolutions, dilated convolutions and residual connections
-    - 描述了时间卷积网络（TCN），其包含有因果卷积、扩张卷积和残差连接
+    - 描述了时间卷积网络（TCN），其包含有因果卷积、扩张卷积以及残差连接
+
+- **Multilevel Wavelet Decomposition Network for Interpretable Time Series Analysis** (**KDD18**) [[paper](https://arxiv.org/pdf/1806.08946v1.pdf)] [[code](https://paperswithcode.com/paper/multilevel-wavelet-decomposition-network-for)]
+    - Propose a wavelet-based neural network structure called multilevel Wavelet Decomposition Network (mWDN), which preserves the advantage of multilevel discrete wavelet decomposition in frequency learning while enables the fine-tuning of all parameters under a deep neural network framework
+    - 提出了一种基于小波的多层次小波分解神经网络结构（mWDN），它既保留了多层次离散小波分解在频率学习中的优势，又能在深度神经网络框架下对所有参数进行微调
+
+### Unsupervised Representation Learning (无监督表示学习)
+
+#### 2019
+
+- **Unsupervised Scalable Representation Learning for Multivariate Time Series** [[paper](https://arxiv.org/pdf/1901.10738v1.pdf)] [[code](https://paperswithcode.com/paper/unsupervised-scalable-representation-learning)]
+    - Propose an unsupervised method to learn universal embeddings for variable length and multivariate time series, which combines an encoder based on causal dilated convolutions with a triplet loss employing time-based negative sampling
+    - 提出一种无监督学习长度可变和多变量时间序列通用嵌入的方法，它结合了基于因果扩张卷积的编码器与基于时间的负采样的三重损失
 
 - - -
 
@@ -172,13 +189,13 @@ This section contains papers dealing with time series data or applying them to t
 
 #### 2019
 
-- **Adversarial Attacks on Time Series** [[paper](https://arxiv.org/pdf/1902.10755v2.pdf)] [[code](https://github.com/houshd/TS_Adv)]
-    - Propose a model distillation technique to mimic the behavior of the various classical time series classification models and an adversarial transformation network (ATN) to attack various time series datasets
-    - 提出一种模拟各种经典时间序列分类模型行为的模型蒸馏技术，以及一种在各种时间序列数据集上产生攻击的对抗变换网络（ATN）
+- **Adversarial Attacks on Time Series** [[paper](https://arxiv.org/pdf/1902.10755v2.pdf)] [[code](https://github.com/houshd/TS_Adv)] *
+    - Utilize an adversarial transformation network (ATN) on a distilled model to attack various time series classification models and datasets. Model distillation technique is used to solve the problem that traditional classification model is considered a black-box model with a non-differentiable internal computation
+    - 利用基于蒸馏模型的对抗变换网络（ATN）攻击各种时间序列分类模型和数据集。模型蒸馏技术被用于解决传统分类模型被认为是一个内部计算不可微的黑盒模型的问题
 
 - **Data-driven Neural Architecture Learning For Financial Time-series Forecasting** [[paper](http://arxiv.org/abs/1903.06751)]
-    - Adapt Heterogeneous Multilayer [Generalized Operational Perceptron](https://www.researchgate.net/profile/Serkan_Kiranyaz/publication/318327067_Generalized_model_of_biological_neural_networks_Progressive_operational_perceptrons/links/59de8a27a6fdcca0d3204d24/Generalized-model-of-biological-neural-networks-Progressive-operational-perceptrons.pdf) (HeMLGOP) algorithm to progressively learn a heterogeneous neural architecture for the given financial time series forecasting problem with imbalanced data distribution problem
-    - 采用异构多层[广义操作感知器](https://www.researchgate.net/profile/Serkan_Kiranyaz/publication/318327067_Generalized_model_of_biological_neural_networks_Progressive_operational_perceptrons/links/59de8a27a6fdcca0d3204d24/Generalized-model-of-biological-neural-networks-Progressive-operational-perceptrons.pdf)（HeMLGOP）算法，来逐步学习得到异构神经网络，以解决具有不平衡数据分布的给定财经时序预测问题
+    - Adapt Heterogeneous Multilayer [Generalized Operational Perceptron](https://www.researchgate.net/publication/318327067_Generalized_model_of_biological_neural_networks_Progressive_operational_perceptrons) (HeMLGOP) algorithm to progressively learn a heterogeneous neural architecture for the given financial time series forecasting problem with imbalanced data distribution problem
+    - 采用异构多层[广义操作感知器](https://www.researchgate.net/publication/318327067_Generalized_model_of_biological_neural_networks_Progressive_operational_perceptrons)（HeMLGOP）算法，来逐步学习得到异构神经网络，以解决具有不平衡数据分布的给定财经时序预测问题
 
 #### 2018
 
