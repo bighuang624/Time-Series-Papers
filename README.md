@@ -20,29 +20,33 @@
   - [Time Series Forecasting (时间序列预测)](#time-series-forecasting-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E9%A2%84%E6%B5%8B)
     - [Univariate (单变量)](#univariate-%E5%8D%95%E5%8F%98%E9%87%8F)
     - [Multivariate to Univariate (多变量预测单变量)](#multivariate-to-univariate-%E5%A4%9A%E5%8F%98%E9%87%8F%E9%A2%84%E6%B5%8B%E5%8D%95%E5%8F%98%E9%87%8F)
+      - [2018](#2018)
       - [2017](#2017)
     - [Multivariate to Multivariate (多变量预测多变量)](#multivariate-to-multivariate-%E5%A4%9A%E5%8F%98%E9%87%8F%E9%A2%84%E6%B5%8B%E5%A4%9A%E5%8F%98%E9%87%8F)
-      - [2018](#2018)
-  - [Time Series Classification (时间序列分类)](#time-series-classification-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E7%B1%BB)
       - [2018](#2018-1)
+  - [Time Series Classification (时间序列分类)](#time-series-classification-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E7%B1%BB)
+      - [2018](#2018-2)
       - [2017](#2017-1)
   - [Time Series Clustering (时间序列聚类)](#time-series-clustering-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E8%81%9A%E7%B1%BB)
       - [2019](#2019)
-      - [2018](#2018-2)
+      - [2018](#2018-3)
       - [2016](#2016)
   - [Anomaly Detection (异常检测)](#anomaly-detection-%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B)
       - [2019](#2019-1)
   - [Sequence Modeling (序列建模)](#sequence-modeling-%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1)
     - [Supervised Sequence Modeling (监督序列建模)](#supervised-sequence-modeling-%E7%9B%91%E7%9D%A3%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1)
-      - [2018](#2018-3)
+      - [2018](#2018-4)
     - [Unsupervised Representation Learning (无监督表示学习)](#unsupervised-representation-learning-%E6%97%A0%E7%9B%91%E7%9D%A3%E8%A1%A8%E7%A4%BA%E5%AD%A6%E4%B9%A0)
       - [2019](#2019-2)
   - [Time Series Segmentation (时间序列分割)](#time-series-segmentation-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E5%89%B2)
   - [Study of Stock Market (股票市场研究)](#study-of-stock-market-%E8%82%A1%E7%A5%A8%E5%B8%82%E5%9C%BA%E7%A0%94%E7%A9%B6)
       - [2017](#2017-2)
+  - [Spatio-temporal Forecasting (时空预测)](#spatio-temporal-forecasting-%E6%97%B6%E7%A9%BA%E9%A2%84%E6%B5%8B)
+    - [Traffic Prediction (交通预测)](#traffic-prediction-%E4%BA%A4%E9%80%9A%E9%A2%84%E6%B5%8B)
+      - [2018](#2018-5)
   - [Others (其他)](#others-%E5%85%B6%E4%BB%96)
       - [2019](#2019-3)
-      - [2018](#2018-4)
+      - [2018](#2018-6)
 
 - - -
 
@@ -56,12 +60,17 @@ Time series forecasting is the task of predicting future values of a time series
 
 The model predicts the current value of **a time series** based upon its previous values as well as the current and past values of multiple driving (exogenous) series.
 
+#### 2018
+
+- **TADA: Trend Alignment with Dual-Attention Multi-task Recurrent Neural Networks for Sales Prediction** (**ICDM18**) [[paper](http://net.pku.edu.cn/daim/hongzhi.yin/papers/ICDM18.pdf)]
+    - Divide the influential factors into internal feature and external feature, which are jointly modelled by a multi-task RNN encoder. In the decoding stage, TADA utilizes two attention mechanisms to compensate for the unknown states of influential factors in the future and adaptively align the upcoming trend with relevant historical trends to ensure precise sales prediction
+    - 将影响因素分为内部特征和外部特征，由多任务 RNN 编码器联合建模。在解码阶段，TADA 利用两种注意力机制来补偿未来影响因素的未知状态，并将未来的趋势与相关的历史趋势相适应，以确保准确预测销量
+
 #### 2017
 
 - **A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction** (**IJCAI17**) [[paper](https://arxiv.org/pdf/1704.02971v4.pdf)] [[code](https://paperswithcode.com/paper/a-dual-stage-attention-based-recurrent-neural)] *
     - Propose DA-RNN, which consists of an encoder with an input attention mechanism to select relevant driving series, and a decoder with a temporal attention mechanism to capture long-range temporal information of the encoded inputs
     - 提出 DA-RNN，其包含一个带有 input attention 机制的编码器来选择相关外部序列，和一个带有 temporal attention 机制的解码器来捕获已编码输入中的长期时间信息
-
 
 ### Multivariate to Multivariate (多变量预测多变量)
 
@@ -180,6 +189,18 @@ Time series segmentation is a method of time-series analysis in which an input t
 - **Deep Neural-Network Based Stock Trading System Based on Evolutionary Optimized Technical Analysis Parameters** [[paper](https://www.sciencedirect.com/science/article/pii/S1877050917318252)] [[code](https://github.com/omerbsezer/SparkDeepMlpGADow30)]
     - Propose a stock trading system based on technical analysis parameters optimized by genetic algorithms, and the optimized parameters are then passed to a deep MLP neural network as features for buy-sell-hold predictions
     - 提出一种基于遗传算法优化的技术分析指标的股票交易系统，优化后的技术分析指标作为特征被传入深度 MLP 神经网络进行买入-卖出-持有预测
+
+- - -
+
+## Spatio-temporal Forecasting (时空预测)
+
+### Traffic Prediction (交通预测)
+
+#### 2018
+
+- **Deep Sequence Learning with Auxiliary Information for Traffic Prediction** (**KDD18**) [[paper](https://arxiv.org/pdf/1806.07380v1.pdf)] [[code](https://paperswithcode.com/paper/deep-sequence-learning-with-auxiliary)] [[video-YouTube](https://www.youtube.com/watch?v=Sw-XqR0MzhA)]
+    - Integrates three kinds of implicit factors to predict traffic conditions with Seq2Seq: 1) offline geographical and social attributes 2) road intersection information 3) online crowd queries
+    - 结合三种隐含因素，通过 Seq2Seq 结构预测交通状况：1）离线地理和社会属性；2）道路交叉口信息；3）在线人群查询
 
 - - -
 
