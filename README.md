@@ -31,22 +31,25 @@
       - [2019](#2019)
       - [2018](#2018-3)
       - [2016](#2016)
+      - [2015](#2015)
   - [Anomaly Detection (异常检测)](#anomaly-detection-%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B)
       - [2019](#2019-1)
+      - [2018](#2018-4)
   - [Sequence Modeling (序列建模)](#sequence-modeling-%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1)
     - [Supervised Sequence Modeling (监督序列建模)](#supervised-sequence-modeling-%E7%9B%91%E7%9D%A3%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1)
-      - [2018](#2018-4)
+      - [2018](#2018-5)
     - [Unsupervised Representation Learning (无监督表示学习)](#unsupervised-representation-learning-%E6%97%A0%E7%9B%91%E7%9D%A3%E8%A1%A8%E7%A4%BA%E5%AD%A6%E4%B9%A0)
       - [2019](#2019-2)
   - [Time Series Segmentation (时间序列分割)](#time-series-segmentation-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E5%89%B2)
+  - [Motif Discovery (模式发现)](#motif-discovery-%E6%A8%A1%E5%BC%8F%E5%8F%91%E7%8E%B0)
   - [Study of Stock Market (股票市场研究)](#study-of-stock-market-%E8%82%A1%E7%A5%A8%E5%B8%82%E5%9C%BA%E7%A0%94%E7%A9%B6)
       - [2017](#2017-2)
   - [Spatio-temporal Forecasting (时空预测)](#spatio-temporal-forecasting-%E6%97%B6%E7%A9%BA%E9%A2%84%E6%B5%8B)
     - [Traffic Prediction (交通预测)](#traffic-prediction-%E4%BA%A4%E9%80%9A%E9%A2%84%E6%B5%8B)
-      - [2018](#2018-5)
+      - [2018](#2018-6)
   - [Others (其他)](#others-%E5%85%B6%E4%BB%96)
       - [2019](#2019-3)
-      - [2018](#2018-6)
+      - [2018](#2018-7)
 
 - - -
 
@@ -62,13 +65,13 @@ The model predicts the current value of **a time series** based upon its previou
 
 #### 2018
 
-- **TADA: Trend Alignment with Dual-Attention Multi-task Recurrent Neural Networks for Sales Prediction** (**ICDM18**) [[paper](http://net.pku.edu.cn/daim/hongzhi.yin/papers/ICDM18.pdf)]
+- **TADA: Trend Alignment with Dual-Attention Multi-task Recurrent Neural Networks for Sales Prediction** (**ICDM2018**) [[paper](http://net.pku.edu.cn/daim/hongzhi.yin/papers/ICDM18.pdf)]
     - Divide the influential factors into internal feature and external feature, which are jointly modelled by a multi-task RNN encoder. In the decoding stage, TADA utilizes two attention mechanisms to compensate for the unknown states of influential factors in the future and adaptively align the upcoming trend with relevant historical trends to ensure precise sales prediction
     - 将影响因素分为内部特征和外部特征，由多任务 RNN 编码器联合建模。在解码阶段，TADA 利用两种注意力机制来补偿未来影响因素的未知状态，并将未来的趋势与相关的历史趋势相适应，以确保准确预测销量
 
 #### 2017
 
-- **A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction** (**IJCAI17**) [[paper](https://arxiv.org/pdf/1704.02971v4.pdf)] [[code](https://paperswithcode.com/paper/a-dual-stage-attention-based-recurrent-neural)] *
+- **A Dual-Stage Attention-Based Recurrent Neural Network for Time Series Prediction** (**IJCAI2017**) [[paper](https://arxiv.org/pdf/1704.02971v4.pdf)] [[code](https://paperswithcode.com/paper/a-dual-stage-attention-based-recurrent-neural)] *
     - Propose DA-RNN, which consists of an encoder with an input attention mechanism to select relevant driving series, and a decoder with a temporal attention mechanism to capture long-range temporal information of the encoded inputs
     - 提出 DA-RNN，其包含一个带有 input attention 机制的编码器来选择相关外部序列，和一个带有 temporal attention 机制的解码器来捕获已编码输入中的长期时间信息
 
@@ -78,7 +81,7 @@ The models predicts the future values of **multivariate time series** only based
 
 #### 2018
 
-- **Modeling Long- and Short-Term Temporal Patterns with Deep Neural Network** (**SIGIR18**) [[paper](https://arxiv.org/pdf/1703.07015v3.pdf)] [[code](https://paperswithcode.com/paper/modeling-long-and-short-term-temporal)] *
+- **Modeling Long- and Short-Term Temporal Patterns with Deep Neural Network** (**SIGIR2018**) [[paper](https://arxiv.org/pdf/1703.07015v3.pdf)] [[code](https://paperswithcode.com/paper/modeling-long-and-short-term-temporal)] *
     - Propose LSTNet, which contains a recurrent-skip layer or a temporal attention layer to capture a mixture of short-term and long-term repeating patterns
     - 提出 LSTNet，使用 recurrent-skip layer 或 temporal attention layer 来建模短期和长期重复模式的混合
 
@@ -98,7 +101,7 @@ Time series forecasting is the task of assigning time series pattern to a specif
 
 #### 2018
 
-- **Towards a Universal Neural Network Encoder for Time Series** [[paper](https://arxiv.org/pdf/1805.03908.pdf)] *
+- **Towards a Universal Neural Network Encoder for Time Series** (**CCIA2018**) [[paper](https://arxiv.org/pdf/1805.03908.pdf)] *
     - Use multi-task learning to enable a time series encoder to learn representations that are useful on data set types with which it has not been trained on. The encoder is formed of a convolutional neural network whose temporal output is summarized by a convolutional attention mechanism
     - 使用多任务学习的方式让时序编码器学习对未接触过的数据集类型有用的表示。本文使用的编码器由卷积神经网络构成，其时间输出由卷积注意机制汇总而成
 
@@ -108,7 +111,7 @@ Time series forecasting is the task of assigning time series pattern to a specif
 
 #### 2017
 
-- **Time series classification from scratch with deep neural networks: A strong baseline** (**IJCNN17**) [[paper](https://arxiv.org/pdf/1611.06455.pdf)] [[code](https://paperswithcode.com/paper/time-series-classification-from-scratch-with#code)]
+- **Time series classification from scratch with deep neural networks: A strong baseline** (**IJCNN2017**) [[paper](https://arxiv.org/pdf/1611.06455.pdf)] [[code](https://paperswithcode.com/paper/time-series-classification-from-scratch-with#code)]
     - Propose Fully Convolutional Network (FCN), which can be a strong baseline for similar tasks as one of the earliest deep learning time series classifiers
     - 提出了完全卷积网络（FCN），作为最早的深度学习时间序列分类器之一，它可以作为类似任务的强基准模型
 
@@ -120,21 +123,27 @@ Time series clustering is the task of forming clusters given a set of unlabeled 
 
 #### 2019
 
-- **SOM-VAE: Interpretable Discrete Representation Learning on Time Series** (**ICLR19**) [[paper](https://arxiv.org/pdf/1806.02199.pdf)] [[code](https://paperswithcode.com/paper/som-vae-interpretable-discrete-representation)] [[SOM-YouTube](https://www.youtube.com/watch?v=3osKNPyAxPM)]
+- **SOM-VAE: Interpretable Discrete Representation Learning on Time Series** (**ICLR2019**) [[paper](https://arxiv.org/pdf/1806.02199.pdf)] [[code](https://paperswithcode.com/paper/som-vae-interpretable-discrete-representation)] [[SOM-YouTube](https://www.youtube.com/watch?v=3osKNPyAxPM)]
     - Design SOM-VAE for interpretable discrete representation learning on time series, and show that the latent probabilistic model in the representation learning architecture improves clustering and interpretability of the representations on time series
     - 针对时间序列上的可解释离散表示学习设计了 SOM-VAE，并表明在表示学习体系结构中的潜在概率模型提高了时间序列表示的聚类效果和可解释性
 
 #### 2018
 
-- **Deep Temporal Clustering: Fully Unsupervised Learning of Time-Domain Features** (**ICLR18**) [[paper](https://arxiv.org/pdf/1802.01059.pdf)] [[code](https://github.com/saeeeeru/dtc-tensorflow)] *
+- **Deep Temporal Clustering: Fully Unsupervised Learning of Time-Domain Features** (**ICLR2018**) [[paper](https://arxiv.org/pdf/1802.01059.pdf)] [[code](https://github.com/saeeeeru/dtc-tensorflow)] *
     - Integrate dimensionality reduction and temporal clustering into a single end-to-end learning framework to jointly optimize
     - 将降维和时序聚类集成到一个端到端神经网络，以进行联合优化
 
 #### 2016
 
-- **Unsupervised Feature Learning from Time Series** (**IJCAI16**) [[paper](https://pdfs.semanticscholar.org/b4f5/8e005541c54b146e67b09094f09ba3297906.pdf)]
+- **Unsupervised Feature Learning from Time Series** (**IJCAI2016**) [[paper](https://pdfs.semanticscholar.org/b4f5/8e005541c54b146e67b09094f09ba3297906.pdf)]
     - Present a new Unsupervised Shapelet Learning Model (USLM) to learn shapelets, which combines pseudo-class label, spectral analysis, shapelets regularization and regularized least-squares for learning (shapelets are time series short segments that can best predict class labels)
     - 给出一个结合了伪类标签、谱分析、shapelets 正则化和正则化最小二乘法的无监督 Shapelet 学习模型（shapelets 是时间序列的短片段，能够最好地预测类标签）
+
+#### 2015
+
+- **k-Shape: Efficient and Accurate Clustering of Time Series** (**SIGMOD2015**) [[paper](http://web2.cs.columbia.edu/~gravano/Papers/2015/sigmod2015.pdf)] [[code](https://github.com/Mic92/kshape)]
+    - Propose k-Shape, a partitional clustering algorithm that preserves the shapes of time series, which compares time series efficiently and computes centroids effectively under the scaling and shift invariances
+    - 提出一种保留时间序列形状的分区聚类算法 k-Shape，它有效地比较时间序列，并在缩放不变性和移位不变性的前提下有效地计算聚类中心
 
 - - -
 
@@ -144,9 +153,15 @@ Anomaly detection is the task of identifying rare items, events or observations 
 
 #### 2019
 
-- **A Deep Neural Network for Unsupervised Anomaly Detection and Diagnosis in Multivariate Time Series Data** (**AAAI19**) [[paper](https://arxiv.org/pdf/1811.08055.pdf)]
+- **A Deep Neural Network for Unsupervised Anomaly Detection and Diagnosis in Multivariate Time Series Data** (**AAAI2019**) [[paper](https://arxiv.org/pdf/1811.08055.pdf)]
     - Propose a Multi-Scale Convolutional Recurrent Encoder-Decoder (MSCRED), to perform anomaly detection and diagnosis in multivariate time series data
     - 提出一种多尺度卷积循环编码器-解码器（MSCRED），对多变量时间序列数据进行异常检测和诊断
+
+#### 2018
+
+- **Outlier Detection for Multidimensional Time Series Using Deep Neural Networks** (**MDM2018**)
+    - First generates statistical features to enrich the feature space of raw time series, then utilizes an autoencoder to reconstruct the enriched time series, deviations of the enriched time series from the reconstructed time series can be taken as indicators of outliers
+    - 首先生成统计特征来丰富原始时间序列的特征空间，然后利用自动编码器对丰富的时间序列进行重构，将丰富的时间序列与重构的时间序列的偏差作为判断是否异常值的指标
 
 - - -
 
@@ -158,11 +173,11 @@ Specially designed sequence modeling methods can learn the representation of the
 
 #### 2018
 
-- **An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling** [[paper](https://arxiv.org/pdf/1803.01271v2.pdf)] [[code](https://paperswithcode.com/paper/an-empirical-evaluation-of-generic)]
+- **An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling** [[paper](https://arxiv.org/pdf/1803.01271v2.pdf)] [[code](https://paperswithcode.com/paper/an-empirical-evaluation-of-generic)] *
     - Describe a temporal convolutional network (TCN), which contains causal convolutions, dilated convolutions and residual connections
     - 描述了时间卷积网络（TCN），其包含有因果卷积、扩张卷积以及残差连接
 
-- **Multilevel Wavelet Decomposition Network for Interpretable Time Series Analysis** (**KDD18**) [[paper](https://arxiv.org/pdf/1806.08946v1.pdf)] [[code](https://paperswithcode.com/paper/multilevel-wavelet-decomposition-network-for)]
+- **Multilevel Wavelet Decomposition Network for Interpretable Time Series Analysis** (**KDD2018**) [[paper](https://arxiv.org/pdf/1806.08946v1.pdf)] [[code](https://paperswithcode.com/paper/multilevel-wavelet-decomposition-network-for)]
     - Propose a wavelet-based neural network structure called multilevel Wavelet Decomposition Network (mWDN), which preserves the advantage of multilevel discrete wavelet decomposition in frequency learning while enables the fine-tuning of all parameters under a deep neural network framework
     - 提出了一种基于小波的多层次小波分解神经网络结构（mWDN），它既保留了多层次离散小波分解在频率学习中的优势，又能在深度神经网络框架下对所有参数进行微调
 
@@ -182,6 +197,12 @@ Time series segmentation is a method of time-series analysis in which an input t
 
 - - -
 
+## Motif Discovery (模式发现)
+
+Time series motifs are approximately repeating patterns in real-value data, the discovery of motifs is often the first step in various kinds of higher-level time series analytics.
+
+- - -
+
 ## Study of Stock Market (股票市场研究)
 
 #### 2017
@@ -198,7 +219,7 @@ Time series segmentation is a method of time-series analysis in which an input t
 
 #### 2018
 
-- **Deep Sequence Learning with Auxiliary Information for Traffic Prediction** (**KDD18**) [[paper](https://arxiv.org/pdf/1806.07380v1.pdf)] [[code](https://paperswithcode.com/paper/deep-sequence-learning-with-auxiliary)] [[video-YouTube](https://www.youtube.com/watch?v=Sw-XqR0MzhA)]
+- **Deep Sequence Learning with Auxiliary Information for Traffic Prediction** (**KDD2018**) [[paper](https://arxiv.org/pdf/1806.07380v1.pdf)] [[code](https://paperswithcode.com/paper/deep-sequence-learning-with-auxiliary)] [[video-YouTube](https://www.youtube.com/watch?v=Sw-XqR0MzhA)]
     - Integrates three kinds of implicit factors to predict traffic conditions with Seq2Seq: 1) offline geographical and social attributes 2) road intersection information 3) online crowd queries
     - 结合三种隐含因素，通过 Seq2Seq 结构预测交通状况：1）离线地理和社会属性；2）道路交叉口信息；3）在线人群查询
 
