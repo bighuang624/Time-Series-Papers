@@ -4,21 +4,21 @@
     - List of awesome papers from various research fields in time series analysis, mainly including algorithms based on machine learning. 
     - `*` after the title of the paper indicates that the full paper has been carefully read by [me](https://github.com/bighuang624).
     - A link of open source code is given if avaliable on [Papers With Code](https://paperswithcode.com/) or [Github](https://github.com/).
+    - Some papers will give links to reading notes.
     - Any [contributions](https://github.com/bighuang624/Time-Series-Papers/blob/master/.github/contribution_template.md) including PR are welcomed.
 
 - 介绍：
     - 收录时间序列分析中各个研究领域的高水平文章，主要包含基于机器学习的算法。
     - 论文标题后的`*`号表示[我](https://github.com/bighuang624)仔细地读过全文。
     - 如果 [Papers With Code](https://paperswithcode.com/) 或 [Github](https://github.com/) 上存在该论文的开源代码，则给出其链接。
+    - 有些论文会给出解读的链接。
     - 欢迎包括 PR 在内的一切[贡献](https://github.com/bighuang624/Time-Series-Papers/blob/master/.github/contribution_template.md)。
 
 - - -
 
-## Catelog (目录)
+## Catelog (目录)     <!-- omit in toc -->
 - [Awesome Time Series Papers](#awesome-time-series-papers)
-  - [Catelog (目录)](#catelog-%E7%9B%AE%E5%BD%95)
   - [Time Series Forecasting (时间序列预测)](#time-series-forecasting-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E9%A2%84%E6%B5%8B)
-    - [Univariate (单变量)](#univariate-%E5%8D%95%E5%8F%98%E9%87%8F)
     - [Multivariate to Univariate (多变量预测单变量)](#multivariate-to-univariate-%E5%A4%9A%E5%8F%98%E9%87%8F%E9%A2%84%E6%B5%8B%E5%8D%95%E5%8F%98%E9%87%8F)
       - [2018](#2018)
       - [2017](#2017)
@@ -57,7 +57,7 @@
 
 Time series forecasting is the task of predicting future values of a time series (as well as uncertainty bounds).
 
-### Univariate (单变量)
+<!-- ### Univariate (单变量) -->
 
 ### Multivariate to Univariate (多变量预测单变量)
 
@@ -105,6 +105,11 @@ Time series forecasting is the task of assigning time series pattern to a specif
     - Use multi-task learning to enable a time series encoder to learn representations that are useful on data set types with which it has not been trained on. The encoder is formed of a convolutional neural network whose temporal output is summarized by a convolutional attention mechanism
     - 使用多任务学习的方式让时序编码器学习对未接触过的数据集类型有用的表示。本文使用的编码器由卷积神经网络构成，其时间输出由卷积注意机制汇总而成
 
+- **Extracting Statistical Graph Features for Accurate and Efficient Time Series Classification** [[paper](http://openproceedings.org/2018/conf/edbt/paper-90.pdf)]
+    - Present a multiscale graph representation for time series as well as feature extraction methods for classification, so that both global and local features from time series are captured
+    - 提出时间序列的多尺度图表示以及从图中提取用于分类的特征的方法，以同时捕获时间序列中的全局和局部特征
+    - [中文解读](https://zhuanlan.zhihu.com/p/58714287) 
+
 - **Transfer learning for time series classification** (**IEEE Big Data 2018**) [[paper](https://arxiv.org/pdf/1811.01533.pdf)] [[code](https://github.com/hfawaz/bigdata18)] *
     - Extensive experiments show that transferring the network's weights works on time series classification task, and the choice of the source dataset impacts significantly on the model's generalization capabilities
     - 使用大量实验表明，模型权值的迁移促进其在目标数据集上分类任务的表现，且源数据集的选择对模型的泛化能力有显著影响
@@ -113,7 +118,11 @@ Time series forecasting is the task of assigning time series pattern to a specif
 
 - **Time series classification from scratch with deep neural networks: A strong baseline** (**IJCNN2017**) [[paper](https://arxiv.org/pdf/1611.06455.pdf)] [[code](https://paperswithcode.com/paper/time-series-classification-from-scratch-with#code)]
     - Propose Fully Convolutional Network (FCN), which can be a strong baseline for similar tasks as one of the earliest deep learning time series classifiers
-    - 提出了完全卷积网络（FCN），作为最早的深度学习时间序列分类器之一，它可以作为类似任务的强基准模型
+    - 提出完全卷积网络（FCN），作为最早的深度学习时间序列分类器之一，它可以作为类似任务的强基准模型
+
+- **Benchmarking Univariate Time Series Classifiers** (**BTW 2017**) [[paper](https://www2.informatik.hu-berlin.de/~schaefpa/benchmarking.pdf)]
+    - The first benchmark that compares 12 state of the art time series classifiers based on runtime. It is worth noting that these classifiers are classified into four categories according to their principles in the paper
+    - 第一个将运行时间作为评估指标来比较 12 个 SOTA 时序分类器的基准工作。文中值得一提的一点是，这些分类器根据工作原理被归类为四个种类
 
 - - -
 
@@ -142,8 +151,8 @@ Time series clustering is the task of forming clusters given a set of unlabeled 
 #### 2015
 
 - **k-Shape: Efficient and Accurate Clustering of Time Series** (**SIGMOD2015**) [[paper](http://web2.cs.columbia.edu/~gravano/Papers/2015/sigmod2015.pdf)] [[code](https://github.com/Mic92/kshape)]
-    - Propose k-Shape, a partitional clustering algorithm that preserves the shapes of time series, which compares time series efficiently and computes centroids effectively under the scaling and shift invariances
-    - 提出一种保留时间序列形状的分区聚类算法 k-Shape，它有效地比较时间序列，并在缩放不变性和移位不变性的前提下有效地计算聚类中心
+    - Propose k-Shape, a partitional clustering algorithm that preserves the shapes of time series, which computes centroids effectively under the scaling and shift invariances
+    - 提出一种保留时间序列形状的分区聚类算法 k-Shape，它在尺度不变性和位移不变性的前提下有效地计算聚类中心
 
 - - -
 
@@ -162,6 +171,7 @@ Anomaly detection is the task of identifying rare items, events or observations 
 - **Outlier Detection for Multidimensional Time Series Using Deep Neural Networks** (**MDM2018**)
     - First generates statistical features to enrich the feature space of raw time series, then utilizes an autoencoder to reconstruct the enriched time series, deviations of the enriched time series from the reconstructed time series can be taken as indicators of outliers
     - 首先生成统计特征来丰富原始时间序列的特征空间，然后利用自动编码器对丰富的时间序列进行重构，将丰富的时间序列与重构的时间序列的偏差作为判断是否异常值的指标
+    - [中文解读](https://zhuanlan.zhihu.com/p/61227373)
 
 - - -
 
@@ -244,3 +254,4 @@ This section contains papers dealing with time series data or applying them to t
 - **Recurrent Neural Networks for Multivariate Time Series with Missing Values** (**Scientific Reports 2018**) [[paper](https://www.nature.com/articles/s41598-018-24271-9.pdf)]
     - Propose GRU-D, which utilizes the missing patterns to achieve better prediction results by incorporating two representations of missing patterns, i.e., masking and time interval
     - 提出 GRU-D，其通过结合缺失的 patterns 的两种表示，即掩蔽（masking）和时间间隔（time interval），来获得更好的预测结果
+    - [中文解读](https://zhuanlan.zhihu.com/p/59518293) 
