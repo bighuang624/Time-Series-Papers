@@ -35,15 +35,16 @@
   - [Anomaly Detection (异常检测)](#anomaly-detection-%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B)
       - [2019](#2019-1)
       - [2018](#2018-4)
+      - [2017](#2017-2)
   - [Sequence Modeling (序列建模)](#sequence-modeling-%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1)
     - [Supervised Sequence Modeling (监督序列建模)](#supervised-sequence-modeling-%E7%9B%91%E7%9D%A3%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1)
       - [2018](#2018-5)
     - [Unsupervised Representation Learning (无监督表示学习)](#unsupervised-representation-learning-%E6%97%A0%E7%9B%91%E7%9D%A3%E8%A1%A8%E7%A4%BA%E5%AD%A6%E4%B9%A0)
       - [2019](#2019-2)
   - [Time Series Segmentation (时间序列分割)](#time-series-segmentation-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E5%89%B2)
-  - [Motif Discovery (模式发现)](#motif-discovery-%E6%A8%A1%E5%BC%8F%E5%8F%91%E7%8E%B0)
+  - [Motif Discovery (重复模式发现)](#motif-discovery-%E9%87%8D%E5%A4%8D%E6%A8%A1%E5%BC%8F%E5%8F%91%E7%8E%B0)
   - [Study of Stock Market (股票市场研究)](#study-of-stock-market-%E8%82%A1%E7%A5%A8%E5%B8%82%E5%9C%BA%E7%A0%94%E7%A9%B6)
-      - [2017](#2017-2)
+      - [2017](#2017-3)
   - [Spatio-temporal Forecasting (时空预测)](#spatio-temporal-forecasting-%E6%97%B6%E7%A9%BA%E9%A2%84%E6%B5%8B)
     - [Traffic Prediction (交通预测)](#traffic-prediction-%E4%BA%A4%E9%80%9A%E9%A2%84%E6%B5%8B)
       - [2018](#2018-6)
@@ -120,10 +121,6 @@ Time series forecasting is the task of assigning time series pattern to a specif
     - Propose Fully Convolutional Network (FCN), which can be a strong baseline for similar tasks as one of the earliest deep learning time series classifiers
     - 提出完全卷积网络（FCN），作为最早的深度学习时间序列分类器之一，它可以作为类似任务的强基准模型
 
-- **Benchmarking Univariate Time Series Classifiers** (**BTW 2017**) [[paper](https://www2.informatik.hu-berlin.de/~schaefpa/benchmarking.pdf)]
-    - The first benchmark that compares 12 state of the art time series classifiers based on runtime. It is worth noting that these classifiers are classified into four categories according to their principles in the paper
-    - 第一个将运行时间作为评估指标来比较 12 个 SOTA 时序分类器的基准工作。文中值得一提的一点是，这些分类器根据工作原理被归类为四个种类
-
 - - -
 
 ## Time Series Clustering (时间序列聚类)
@@ -173,6 +170,12 @@ Anomaly detection is the task of identifying rare items, events or observations 
     - 首先生成统计特征来丰富原始时间序列的特征空间，然后利用自动编码器对丰富的时间序列进行重构，将丰富的时间序列与重构的时间序列的偏差作为判断是否异常值的指标
     - [中文解读](https://zhuanlan.zhihu.com/p/61227373)
 
+#### 2017
+
+- **Transfer Learning for Time Series Anomaly Detection** (**PKDD/ECML2017**) [[paper](https://pdfs.semanticscholar.org/189e/d4bac3df3068efe5a2fdd042431f848eaba6.pdf?_ga=2.170098407.67314887.1556198862-162043056.1543142349)]
+   - Introduce two decision functions to guide instance-based transfer learning for time series anomaly detection. A decision function decides whether an instance from source domain should be transfered or not
+   - 引入两种决策函数，指导用于时间序列异常检测的基于样本的迁移学习。决策函数决定一个源域中的样本是否应该被迁移
+
 - - -
 
 ## Sequence Modeling (序列建模)
@@ -207,7 +210,7 @@ Time series segmentation is a method of time-series analysis in which an input t
 
 - - -
 
-## Motif Discovery (模式发现)
+## Motif Discovery (重复模式发现)
 
 Time series motifs are approximately repeating patterns in real-value data, the discovery of motifs is often the first step in various kinds of higher-level time series analytics.
 
@@ -237,7 +240,7 @@ Time series motifs are approximately repeating patterns in real-value data, the 
 
 ## Others (其他)
 
-This section contains papers dealing with time series data or applying them to time series tasks, but not appropriate for previous sections.
+This section contains papers dealing with time series data or applying them to time series tasks, but not appropriate for previous topics.
 
 #### 2019
 
