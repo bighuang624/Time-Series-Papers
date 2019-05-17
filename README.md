@@ -18,39 +18,41 @@
 
 ## Catelog (目录)     <!-- omit in toc -->
 - [Awesome Time Series Papers](#awesome-time-series-papers)
-  - [Time Series Forecasting (时间序列预测)](#time-series-forecasting-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E9%A2%84%E6%B5%8B)
-    - [Multivariate to Univariate (多变量预测单变量)](#multivariate-to-univariate-%E5%A4%9A%E5%8F%98%E9%87%8F%E9%A2%84%E6%B5%8B%E5%8D%95%E5%8F%98%E9%87%8F)
-      - [2018](#2018)
-      - [2017](#2017)
-    - [Multivariate to Multivariate (多变量预测多变量)](#multivariate-to-multivariate-%E5%A4%9A%E5%8F%98%E9%87%8F%E9%A2%84%E6%B5%8B%E5%A4%9A%E5%8F%98%E9%87%8F)
-      - [2018](#2018-1)
-  - [Time Series Classification (时间序列分类)](#time-series-classification-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E7%B1%BB)
-      - [2018](#2018-2)
-      - [2017](#2017-1)
-  - [Time Series Clustering (时间序列聚类)](#time-series-clustering-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E8%81%9A%E7%B1%BB)
-      - [2019](#2019)
-      - [2018](#2018-3)
-      - [2016](#2016)
-      - [2015](#2015)
-  - [Anomaly Detection (异常检测)](#anomaly-detection-%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B)
-      - [2019](#2019-1)
-      - [2018](#2018-4)
-      - [2017](#2017-2)
-  - [Sequence Modeling (序列建模)](#sequence-modeling-%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1)
-    - [Supervised Sequence Modeling (监督序列建模)](#supervised-sequence-modeling-%E7%9B%91%E7%9D%A3%E5%BA%8F%E5%88%97%E5%BB%BA%E6%A8%A1)
-      - [2018](#2018-5)
-    - [Unsupervised Representation Learning (无监督表示学习)](#unsupervised-representation-learning-%E6%97%A0%E7%9B%91%E7%9D%A3%E8%A1%A8%E7%A4%BA%E5%AD%A6%E4%B9%A0)
-      - [2019](#2019-2)
-  - [Time Series Segmentation (时间序列分割)](#time-series-segmentation-%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%88%86%E5%89%B2)
-  - [Motif Discovery (重复模式发现)](#motif-discovery-%E9%87%8D%E5%A4%8D%E6%A8%A1%E5%BC%8F%E5%8F%91%E7%8E%B0)
-  - [Study of Stock Market (股票市场研究)](#study-of-stock-market-%E8%82%A1%E7%A5%A8%E5%B8%82%E5%9C%BA%E7%A0%94%E7%A9%B6)
-      - [2017](#2017-3)
-  - [Spatio-temporal Forecasting (时空预测)](#spatio-temporal-forecasting-%E6%97%B6%E7%A9%BA%E9%A2%84%E6%B5%8B)
-    - [Traffic Prediction (交通预测)](#traffic-prediction-%E4%BA%A4%E9%80%9A%E9%A2%84%E6%B5%8B)
-      - [2018](#2018-6)
-  - [Others (其他)](#others-%E5%85%B6%E4%BB%96)
-      - [2019](#2019-3)
-      - [2018](#2018-7)
+    - [Time Series Forecasting (时间序列预测)](#time-series-forecasting)
+        - [Univariate (单变量)](#univariate)
+            - [2018](#2018)
+        - [Multivariate to Univariate (多变量预测单变量)](#multivariate-to-univariate)
+            - [2018](#2018)
+            - [2017](#2017)
+        - [Multivariate to Multivariate (多变量预测多变量)](#multivariate-to-multivariate)
+            - [2018](#2018)
+    - [Time Series Classification (时间序列分类)](#time-series-classification)
+            - [2018](#2018)
+            - [2017](#2017)
+    - [Time Series Clustering (时间序列聚类)](#time-series-clustering)
+            - [2019](#2019)
+            - [2018](#2018)
+            - [2016](#2016)
+            - [2015](#2015)
+    - [Anomaly Detection (异常检测)](#anomaly-detection)
+            - [2019](#2019)
+            - [2018](#2018)
+            - [2017](#2017)
+    - [Sequence Modeling (序列建模)](#sequence-modeling)
+        - [Supervised Sequence Modeling (监督序列建模)](#supervised-sequence-modeling)
+            - [2018](#2018)
+        - [Unsupervised Representation Learning (无监督表示学习)](#unsupervised-representation-learning)
+            - [2019](#2019)
+    - [Time Series Segmentation (时间序列分割)](#time-series-segmentation)
+    - [Motif Discovery (重复模式发现)](#motif-discovery)
+    - [Study of Stock Market (股票市场研究)](#study-of-stock-market)
+            - [2017](#2017)
+    - [Spatio-temporal Forecasting (时空预测)](#spatio-temporal-forecasting)
+        - [Traffic Prediction (交通预测)](#traffic-prediction)
+            - [2018](#2018)
+    - [Others (其他)](#others)
+            - [2019](#2019)
+            - [2018](#2018)
 
 - - -
 
@@ -58,7 +60,13 @@
 
 Time series forecasting is the task of predicting future values of a time series (as well as uncertainty bounds).
 
-<!-- ### Univariate (单变量) -->
+### Univariate (单变量)
+
+#### 2018
+
+- **RESTFul: Resolution-Aware Forecasting of Behavioral Time Series Data** (**CIKM2018**) [[paper](https://dl.acm.org/citation.cfm?id=3271794)] *
+    - Propose a multi-resolution time series forecasting model RESTFul, which develops a recurrent framework to encode the temporal patterns at each resolution, and a convolutional fusion framework to model the inter-dependencies between the sequential patterns with different time resolutions
+    - 提出多粒度时序预测模型 RESTFul，该模型使用一个循环神经网络来编码每个粒度下的时间维度特征，以及一个卷积融合框架来模拟不同时间粒度的特征之间的互相依赖关系。
 
 ### Multivariate to Univariate (多变量预测单变量)
 
