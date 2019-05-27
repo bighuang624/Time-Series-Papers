@@ -201,10 +201,15 @@ Specially designed sequence modeling methods can learn the representation of the
 - **Multilevel Wavelet Decomposition Network for Interpretable Time Series Analysis** (**KDD2018**) [[paper](https://arxiv.org/pdf/1806.08946v1.pdf)] [[code](https://paperswithcode.com/paper/multilevel-wavelet-decomposition-network-for)]
     - Propose a wavelet-based neural network structure called multilevel Wavelet Decomposition Network (mWDN), which preserves the advantage of multilevel discrete wavelet decomposition in frequency learning while enables the fine-tuning of all parameters under a deep neural network framework
     - 提出了一种基于小波的多层次小波分解神经网络结构（mWDN），它既保留了多层次离散小波分解在频率学习中的优势，又能在深度神经网络框架下对所有参数进行微调
+    - [中文解读](https://zhuanlan.zhihu.com/p/56821943) 
 
 ### Unsupervised Representation Learning (无监督表示学习)
 
 #### 2019
+
+- **Learning to Adaptively Scale Recurrent Neural Networks** [[paper](https://arxiv.org/pdf/1902.05696.pdf)]
+    - Propose Adaptively Scaled Recurrent Neural Networks (ASRNNs), a simple extension for existing RNN structures, which allows them to adaptively adjust the scale based on temporal contexts at different time steps 
+    - 提出自适应尺度循环神经网络（ASRNNs），对现有 RNN 结构进行简单扩展，使其能够在处于不同时间步时根据上下文自适应调整尺度
 
 - **Unsupervised Scalable Representation Learning for Multivariate Time Series** [[paper](https://arxiv.org/pdf/1901.10738v1.pdf)] [[code](https://paperswithcode.com/paper/unsupervised-scalable-representation-learning)]
     - Propose an unsupervised method to learn universal embeddings for variable length and multivariate time series, which combines an encoder based on causal dilated convolutions with a triplet loss employing time-based negative sampling
