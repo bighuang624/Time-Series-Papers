@@ -215,6 +215,12 @@ Specially designed sequence modeling methods can learn the representation of the
     - Propose an unsupervised method to learn universal embeddings for variable length and multivariate time series, which combines an encoder based on causal dilated convolutions with a triplet loss employing time-based negative sampling
     - 提出一种无监督学习长度可变和多变量时间序列通用嵌入的方法，它结合了基于因果扩张卷积的编码器与基于时间的负采样的三重损失
 
+#### 2018
+
+- **Learning representations for multivariate time series with missing data using Temporal Kernelized Autoencoders** [[paper](https://arxiv.org/pdf/1805.03473.pdf)]
+    - Propose Temporal Kernelized AutoEncoder (TKAE) to learn representations of real-valued MTS with unequal lengths and missing data
+    - 提出时态核化自动编码器（TKAE），用于学习具有不等长度和丢失数据的实值多变量时间序列的表示 
+
 - - -
 
 ## Time Series Segmentation (时间序列分割)
