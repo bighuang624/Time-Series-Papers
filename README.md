@@ -1,5 +1,7 @@
 # Awesome Time Series Papers
 
+> **Notice:** Thanks for all your interest. However, unfortunately, since I'm no longer working on time series analysis, **I may not be able to continue adding content by myself**. If someone **pulls requests**, I will update it. Better yet, if you are willing to **fork this repository and keep updating**, please contact me and I will add your repository link here. Thanks.
+
 - Introduction:
     - List of awesome papers from various research fields in time series analysis, mainly including algorithms based on machine learning. 
     - `*` after the title of the paper indicates that the full paper has been carefully read by [me](https://github.com/bighuang624).
@@ -242,7 +244,7 @@ Specially designed sequence modeling methods can learn the representation of the
 
 - **Unsupervised Scalable Representation Learning for Multivariate Time Series** [[paper](https://arxiv.org/pdf/1901.10738v1.pdf)] [[code](https://paperswithcode.com/paper/unsupervised-scalable-representation-learning)]
     - Propose an unsupervised method to learn universal embeddings for variable length and multivariate time series, which combines an encoder based on causal dilated convolutions with a triplet loss employing time-based negative sampling
-    - 提出一种无监督学习长度可变和多变量时间序列通用嵌入的方法，它结合了基于因果扩张卷积的编码器与基于时间的负采样的三重损失
+    - 提出一种无监督学习长度可变和多变量时间序列通用嵌入的方法，它结合了基于因果扩张卷积的编码器与基于时间的负采样的三元组损失
 
 #### 2018
 
